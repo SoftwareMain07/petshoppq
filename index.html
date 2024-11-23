@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsiva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Monsieur+La+Doulaise&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#baner"> <img src="images/logo.jpg" alt="Logo" /></a>
+        </div>
+        <div class="frase_boasvindas_menu">
+            <p>Cuide de quem te ama! <img src='images/cachorro.png'></p>
+        </div>
+        <nav class="nav-links">
+            <a href="#quemsomos" class="quemsomos-link">Quem Somos <img src="images/quemsomos.png"
+                    alt="Quem Somos" /></a>
+            <a href="#servicos" class="servicos-link">Serviços <img src="images/servicos.png" alt="Serviços" /></a>
+            <a target="_blank"
+                href="https://www.google.com/maps/place/Supermercado+Manchester/@-26.0702573,-48.619983,17z/data=!3m1!4b1!4m6!3m5!1s0x94d95641f368ca63:0xabbb60110f97077c!8m2!3d-26.0702573!4d-48.6174081!16s%2Fg%2F1ydnqf_l6?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                class="local-link">Localização <img src="images/localizacao.png" alt="Localização" /></a>
+            <a href="https://wa.me/5549988020139?text=Olá!%20Escolha%20uma%20opção:%201-%20Preços%202-%20Medidas"
+                target="_blank" class="whats-link">Fale Conosco <img src="images/whatsP.png" alt="WhatsApp" /></a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main>
+        <div id="baner" class="banner">
+            <div class="banner_foto1">
+                <img class="foto1" src="images/conheca_pet.png">
+            </div>
+            <div class="banner_chamada2">
+                <p>"Seu pet merece o melhor, e nós estamos aqui para garantir isso!"</p>
+                <div class="servicos-chamada">
+                    <p style="text-align: start;">Confira nossos serviços:</p>
+                    <ul style="text-align:start;">
+                        <li>Banho e Tosa</li>
+                        <li>Triagem</li>
+                        <li>Consultórios</li>
+                        <li>Vacinas</li>
+                        <li>Ótimos Produtos</li>
+                        <li>Veterinários Qualificados</li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <div class="botao-whats">
+                        <a target="_blank" id="whats" href="https://wa.me/5549988020139">Agendar
+                            horário <i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <div class="botao-produtos">
+                        <a href="#secao-produtos">Quero ver os produtos <i class="fas fa-paw"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Seção Quem Somos -->
+    <section id="quemsomos">
+        <h2>QUEM SOMOS</h2>
+        <h3>No Petshop Bicho Mimado, nossa missão é oferecer cuidados excepcionais e carinho para os seus animais de
+            estimação,
+            como se fossem parte da nossa própria família. Sabemos o quanto seu pet é importante, e por isso, nos
+            dedicamos a proporcionar um ambiente acolhedor, seguro e de confiança para ele.
+
+            Com anos de experiência no cuidado de animais, nossa equipe é formada por profissionais apaixonados e
+            comprometidos com o bem-estar dos bichinhos. Oferecemos serviços de alta qualidade, desde banhos e tosas até
+            consultas veterinárias e cuidados especializados, sempre priorizando o conforto e a saúde dos nossos
+            clientes peludos.
+
+            Acreditamos que cada pet tem uma personalidade única e, por isso, tratamos cada um com atenção e carinho
+            individualizado. Em nosso pet shop, seu amigo de quatro patas estará em boas mãos, recebendo o mimo que ele
+            merece!
+
+        </h3>
+    </section>
+
+    <div class="legenda_servicos">
+        <h1>Serviços</h1>
+    </div>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
+        <div class="services-container">
+            <div class="service-card">
+                <strong>Banho e Tosa</strong>
+                <p>Deixe seu pet limpinho e bem cuidado com nossos profissionais experientes.</p>
+            </div>
+            <div class="service-card">
+                <strong>Triagem</strong>
+                <p>Triagem completa para identificar as necessidades de cuidados do seu pet.</p>
+            </div>
+            <div class="service-card">
+                <strong>Consultórios</strong>
+                <p>Espaço equipado para atendimentos com conforto e segurança.</p>
+            </div>
+            <div class="service-card">
+                <strong>Vacinas</strong>
+                <p>Proteção garantida com vacinas atualizadas para a saúde do seu pet.</p>
+            </div>
+            <div class="service-card">
+                <strong>Ótimos Produtos</strong>
+                <p>Oferecemos uma linha completa de produtos de alta qualidade para o bem-estar do seu pet.</p>
+            </div>
+            <div class="service-card">
+                <strong>Veterinários Qualificados</strong>
+                <p>Equipe de veterinários experientes e dedicados para cuidar do seu amigo.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="botao_agendar">
+        <a class="botao-whatsapp" href="https://wa.me/5549988020139" target="_blank">
+            <span class="icone">📅</span> <!-- Ícone de WhatsApp -->
+            Agendar horário
+        </a>
+    </div>
+
+    <!-- Seção Produtos -->
+
+    <p id='secao-produtos' class="legenda-produtos">PRODUTOS DE QUALIDADE</p>
+    <div class="produtos">
+        <div class="card">
+            <p>RAÇÕES DAS MAIS VARIADAS MARCAS</p>
+            <div class="estrutura-prod-img">
+                <img class="prod-img" src="images/racao1.jpg" alt="Ração">
+                <img class="prod-img" src="images/racao2.jpg" alt="Ração">
+                <img class="prod-img" src="images/racao3.jpg" alt="Ração">
+                <img class="prod-img" src="images/racao4.jpg" alt="Ração">
+                <img class="prod-img" src="images/racao5.jpg" alt="Ração">
+            </div>
+        </div>
+
+        <div class="card">
+            <p>BRINQUEDOS E ACESSÓRIOS</p>
+            <div class="estrutura-prod-img">
+                <img class="prod-img" src="images/brin1.jpg" alt="Ração">
+                <img class="prod-img" src="images/brin2.jpg" alt="Ração">
+                <img class="prod-img" src="images/brin3.jpg" alt="Ração">
+                <img class="prod-img" src="images/brin4.jpg" alt="Ração">
+                <img class="prod-img" src="images/brin5.jpg" alt="Ração">
+            </div>
+        </div>
+
+        <div class="card">
+            <p>SHAMPOOS, CONDICIONADORES, SABONETES, PERFUMES E DESINFETANTES PARA ANIMAIS.
+            </p>
+            <div class="estrutura-prod-img">
+                <img class="prod-img" src="images/shamp1.jpg" alt="Ração">
+                <img class="prod-img" src="images/shamp2.jpg" alt="Ração">
+                <img class="prod-img" src="images/cond1.jpg" alt="Ração">
+                <img class="prod-img" src="images/perfume1.jpg" alt="Ração">
+                <img class="prod-img" src="images/sabonete1.jpg" alt="Ração">
+            </div>
+        </div>
+        <div class="card">
+            <p>COMEDOUROS E BEBEDOUROS</p>
+            <div class="estrutura-prod-img">
+                <img class="prod-img" src="images/comedouro1.jpg" alt="Ração">
+                <img class="prod-img" src="images/bebedouro1.jpg" alt="Ração">
+                <img class="prod-img" src="images/bebedouro2.jpg" alt="Ração">
+                <img class="prod-img" src="images/comedouro2.jpg" alt="Ração">
+                <img class="prod-img" src="images/bebe_come.jpg" alt="Ração">
+            </div>
+        </div>
+
+        <div class="card">
+            <p>VERMÍFUGOS, ANTIPULGAS, CARRAPATICIDAS E VITAMINAS.
+            </p>
+            <div class="estrutura-prod-img">
+                <img class="prod-img" src="images/antipulgas1.jpg" alt="Ração">
+                <img class="prod-img" src="images/vermifugos1.jpg" alt="Ração">
+                <img class="prod-img" src="images/anticarrapatos.jpg" alt="Ração">
+                <img class="prod-img" src="images/antipulgagatos.jpg" alt="Ração">
+                <img class="prod-img" src="images/anticarrapatos2.jpg" alt="Ração">
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER -->
+
+    <footer>
+        <div class="footer-content">
+            <!-- Seção de Links -->
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#quemsomos">Quem Somos</a>
+                <a href="#servicos">Serviços</a>
+                <a target="_blank"
+                    href="https://www.google.com/maps/place/Supermercado+Manchester/@-26.0702573,-48.619983,17z/data=!3m1!4b1!4m6!3m5!1s0x94d95641f368ca63:0xabbb60110f97077c!8m2!3d-26.0702573!4d-48.6174081!16s%2Fg%2F1ydnqf_l6?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">Localização</a>
+                <a target="_blank" href=" https://wa.me/5549988020139">Fale Conosco</a>
+            </div>
+
+            <!-- Logotipo e Descrição -->
+            <div class="footer-logo">
+                <img id="foot-logo" src="images/logo.jpg" alt="Logo Bicho Mimado">
+                <p>Cuidando do seu pet com carinho e dedicação</p>
+            </div>
+
+            <!-- Contato e Redes Sociais -->
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>Telefone: (49) 99880-20139</p>
+                <p>Email: contato@bichomimado.com</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/face.jpeg" alt="Facebook"></a>
+                    <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/whats.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="footer-copyright">
+            © Bicho Mimado 2024 - Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
